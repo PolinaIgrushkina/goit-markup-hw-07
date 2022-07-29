@@ -374,6 +374,10 @@ a.contacts.footer:focus {
 
 /* Стилизация секции hero */
 .hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
     text-align: center;
     letter-spacing: 0.06em;
 
@@ -385,13 +389,7 @@ a.contacts.footer:focus {
                       url("../images/background.jpg");                     
 }
 
-.container-hero {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -405,7 +403,7 @@ a.contacts.footer:focus {
     color: var(--secondary-text-color);
 }
 
-.hero-button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -612,19 +610,19 @@ a.contacts.footer:focus {
 }
 
 /* Стилизация секции benefits */
-.benefits-items {
+.benefits__list {
     display: flex;   
 }
 
-.benefits-items .item:not(:last-child) {
+.benefits__list .benefits__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.benefits-items .item {
+.benefits__item {
     max-width: 270px;
 }
 
-.benefits h3 {
+.benefits__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -635,13 +633,13 @@ a.contacts.footer:focus {
     color: var(--title-text-color);
 }
 
-.benefits p {
+.benefits__paragraph {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.icon-benefit {
+.benefits__icon {
     width: 270px;
     height: 120px;
 
@@ -654,20 +652,20 @@ a.contacts.footer:focus {
 }
 
 /* Стилизация секции services */
-.section.services {
+.services {
     padding-top: 0;
 }
 
-.services-items {
+.services__list {
     display: flex;
     justify-content: space-between;
 }
 
-.services-title {
+.services__main-title {
     margin-bottom: 50px;
 }
 
-.services-items h3 {
+.services__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -688,22 +686,22 @@ a.contacts.footer:focus {
     bottom: 0;
 }
 
-.img-services-items {
+.services__img {
     position: relative;
 }
 
 
 /* Стилизация секции team */
-.section.team {
+.team {
     background-color: var(--button-background-color);
 }
 
-.team-items {
+.team__list {
     display: flex;
     justify-content: space-between;
 }
 
-.team-item {
+.team__item {
     background-color: var(--secondary-text-color);
     text-align: center;
     padding-bottom: 30px;
@@ -711,19 +709,11 @@ a.contacts.footer:focus {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-title {
+.team__main-title {
     margin-bottom: 50px;
 }
 
-.team {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.team h3 { 
+.team__title { 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -734,7 +724,7 @@ a.contacts.footer:focus {
     color: var(--title-text-color);
 }
 
-.team p {
+.team__paragraph {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -742,14 +732,14 @@ a.contacts.footer:focus {
     letter-spacing: 0.03em;
 }
 
-.social-networks {
+.team__social-networks-list {
     display: flex;
     justify-content: space-between;
     width: 206px;
     margin: 0 auto;
 }
 
-.item-social-networks {
+.team__social-networks-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -765,21 +755,31 @@ a.contacts.footer:focus {
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-social-networks:hover,
-.item-social-networks:focus {
+.team__social-networks-item:hover,
+.team__social-networks-item:focus {
     background-color: var(--accent-color);
     fill: var( --secondary-text-color);
     border-radius: 50%;
 }
 
 /*Стилизация секции clients*/
-.clients-examples {
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.clients__list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.clients-site {
+.clients__website {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -791,19 +791,19 @@ a.contacts.footer:focus {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-logo {
+.clients__icon-logo {
     fill: var(--color-of-svg);
     
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-site:hover .icon-logo,
-.clients-site:focus .icon-logo {
+.clients__website:hover .clients__icon-logo,
+.clients__website:focus .clients__icon-logo {
     fill: var(--accent-color);
 }
 
-.clients-site:hover,
-.clients-site:focus {
+.clients__website:hover,
+.clients__website:focus {
     border: 1px solid var(--accent-color);
 }
 
