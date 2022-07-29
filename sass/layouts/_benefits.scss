@@ -3,12 +3,11 @@
     display: flex;
 }
 
-.benefits__list .benefits__item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .benefits__item {
     max-width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .benefits__title {
